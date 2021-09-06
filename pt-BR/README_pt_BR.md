@@ -2180,7 +2180,7 @@ Com o operador `+`, você pode concatenar seqüências de caracteres (strings). 
 ```javascript
 function* iniciarJogo() {
   const resposta = yield 'Você ama JavaScript?';
-  if (resposta !== 'Sim') {
+  if (resposta.toLowerCase() !== 'sim') {
     return "Uau... Acho que entramos aqui";
   }
   return 'O JavaScript também ama você ❤️';
